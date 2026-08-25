@@ -1,6 +1,6 @@
 global.approvalStore = global.approvalStore || {};
 
-export default function handler(req, res) {
+module.exports = function handler(req, res) {
   const { username } = req.query;
 
   if (!username) {
@@ -14,4 +14,4 @@ export default function handler(req, res) {
     username: username,
     status: currentStatus // "PENDING", "APPROVED", or "DENIED"
   });
-}
+};
