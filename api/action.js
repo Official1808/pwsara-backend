@@ -1,7 +1,6 @@
-// In-memory store (Vercel serverless memory)
 global.approvalStore = global.approvalStore || {};
 
-export default function handler(req, res) {
+module.exports = function handler(req, res) {
   const { action, username, token } = req.query;
 
   if (!username || !action) {
@@ -78,4 +77,4 @@ export default function handler(req, res) {
     </body>
     </html>
   `);
-}
+};
