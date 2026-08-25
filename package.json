@@ -1,0 +1,10 @@
+{
+  "name": "pwsara-backend",
+  "version": "1.0.0",
+  "description": "Approval webhook and status checker for PW Gate App",
+  "main": "api/index.js",
+  "scripts": {
+    "start": "node api/index.js"
+  },
+  "dependencies": {}
+}
